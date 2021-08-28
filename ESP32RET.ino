@@ -168,12 +168,12 @@ void loadSettings()
 
 void setup()
 {
-    //delay(5000); //just for testing. Don't use in production
+    delay(5000); //just for testing. Don't use in production
 
     espChipRevision = ESP.getChipRevision();
 
-    Serial.begin(1000000); //for production
-    //Serial.begin(115200); //for testing
+    //Serial.begin(1000000); //for production
+    Serial.begin(115200); //for testing
 
     SysSettings.isWifiConnected = false;
 
